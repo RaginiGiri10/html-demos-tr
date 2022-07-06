@@ -1,0 +1,24 @@
+h1 {
+  color: blue;
+}
+
+p {
+  color: blue;
+}
+
+ul {
+  list-style-type: none;
+  background-color: black;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

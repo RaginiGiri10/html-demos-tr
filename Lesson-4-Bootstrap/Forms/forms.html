@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="mystyle.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <form>
+        
+        <div class="container mt-4">
+            <h1>Registration Form</h1>
+            <hr/>
+            <div class="mt-2">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" class="form-control" type="email" placeholder="Enter email" required/>
+            </div>
+            <div class="mt-2">
+                <label for="pwd" class="form-label">Password</label>
+                <input id="pwd" class="form-control" type="password" required/>
+            </div>
+            <div class="mt-2">
+                <label for="cfpwd" class="form-label">Confirm Password</label>
+                <input id="cfpwd" class="form-control" type="password" required/>
+            </div>
+
+            <div class="mt-2">
+                <label class="form-label">Gender</label>
+                <select class="form-select">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <label class="form-label">Favourite Color</label>
+            <div class="mt-2 form-check">
+               <input type="radio" value="Red" class="form-check-input">
+               <label class="form-check-label">Red</label>
+               
+            </div>
+           
+            <div class="mt-2">
+                <button class="btn btn-primary">Register</button>
+            </div>
+        </div>
+
+       
+       
+    </form>
+  
+   
+</body>
+</html>

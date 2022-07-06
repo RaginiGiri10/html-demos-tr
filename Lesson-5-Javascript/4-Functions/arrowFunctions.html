@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions Demo</title>
+</head>
+<script>
+    //Method-3
+
+    let startCar =() => {
+     console.log('Anonymous function is starting the car...');
+   }
+
+   let startCarWithParameter = (carModel)=>{
+    console.log(carModel,'started')
+   }
+
+   let startCarWithParameterWithDefaultValue = (carModel='Tesla')=> carModel + " started"; 
+  
+   let startCarWithParameterAndReturn = (carModel)=>{
+        return carModel + " started";
+   }
+   startCar();
+   startCarWithParameter('Audi')
+
+   let carStart = startCarWithParameterAndReturn('Benz');
+   console.log(carStart);
+
+   let defaultCar = startCarWithParameterWithDefaultValue('Alto');
+   console.log(defaultCar);
+</script>
+<body>
+    
+</body>
+</html>

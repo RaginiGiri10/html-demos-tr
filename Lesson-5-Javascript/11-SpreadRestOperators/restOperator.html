@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Demo</title>
+
+    <script>
+        function addWithArray(args) {
+               let sum = 0;
+               args.forEach(value => {
+                 sum += value;
+             });
+
+           return sum;
+           }
+
+           function addWithRestOperation(value1,value2,...args) {
+               let sum = 0;
+               args.forEach(value => {
+                 sum += value;
+             });
+
+           return sum;
+           }
+
+
+           var numbersToAdd = [1,2,3];
+           console.log(addWithArray(numbersToAdd))
+
+
+           console.log(addWithRestOperation(5,5,5,5))
+
+           
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Functions</title>
+</head>
+<script>
+
+  //Method-2
+   let startCar = function(){
+    console.log('Anonymous function is starting the car...');
+   }
+
+   let startCarWithParameter = function(carModel){
+    console.log(carModel,'started')
+   }
+
+   let startCarWithParameterAndReturn = function(carModel){
+        return carModel + " started";
+   }
+
+   let startCarWithParameterWithDefaultValue = function(carModel='Tesla'){
+    return carModel + " started"; 
+   }
+
+   startCar();
+   startCarWithParameter('Audi')
+
+   let carStart = startCarWithParameterAndReturn('Benz');
+   console.log(carStart);
+
+   let defaultCar = startCarWithParameterWithDefaultValue('Alto');
+   console.log(defaultCar);
+
+
+
+ //Call back functions
+   function Display(carStart){
+     carStart();
+   }
+
+   Display(startCar);
+
+</script>
+<body>
+    
+</body>
+</html>

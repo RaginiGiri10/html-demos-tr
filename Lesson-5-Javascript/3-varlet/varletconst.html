@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Let Demo</title>
+    <script>
+        if(true){
+            var x= 10; // Scope of var is always global.
+            x= x+5;
+        }
+        console.log(x);
+
+
+        if(true){
+        
+            let y=15; // Scope of let variable is within the scope where it is declared.
+            console.log(y);
+        }
+
+       
+
+        var name ="Thomas";
+        var name ="Tina"; // This will not throw error even though name is defined before.
+
+      //  let age = 20;
+       // let age="hello";  // This is will throw an error
+
+
+
+        console.log(name);
+
+
+
+        let pi = 3.14;
+        pi = 4.14;
+
+        const piValue = 3.14;
+      //  piValue=4.14; // throws an error. Once a variable is marked as const the value connoy be changed.
+
+      //  console.log(piValue) 
+
+        if(true){
+            const passMark =35; // Scope of const variable is within the scope where it is declared.(Same as let)
+        }
+
+        console.log(passMark)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

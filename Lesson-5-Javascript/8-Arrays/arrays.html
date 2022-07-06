@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Demo</title>
+
+    <script>
+
+        const fruits = ["Apple","Orange","Pineapple"];
+         fruits[3]="Guava";
+         
+        var cars =[];
+        cars[0]="Audi";
+        cars[1]="Benz";
+        cars[2]="Hyundai";
+
+      //  alert(`Length of fruits array is ${fruits.length}`)
+
+       // alert(`Length of cars array is ${cars.length}`)
+
+        for(let car of cars){
+            console.log(car)
+        }
+
+
+        for(let i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+        }
+
+
+        console.log('Array foreach')
+        fruits.forEach(value=>{
+            console.log(value)
+        })
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

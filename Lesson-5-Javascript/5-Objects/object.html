@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javscript Objects</title>
+    <script>
+        let user = {
+            firstName:'James',
+            lastName:'Thomas',
+            age: 27,
+            fullNameArrow : ()=>{
+                return user.firstName + ' ' + user.lastName
+            },
+
+            fullName : function(){
+                   return this.firstName + ' ' + this.lastName
+            }
+        }
+
+        user.email ='James@test.com'
+        console.log(user)
+
+        console.log('FullNameFromArrowFunction -', user.fullNameArrow())
+        console.log(user.fullName())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

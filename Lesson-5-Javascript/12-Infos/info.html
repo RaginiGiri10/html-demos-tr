@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Info</title>
+    <script>
+
+    let person1 = {name:'Tina'}
+    let person2 = person1;
+    person2.name="Maria";
+
+   // alert(person1.name)
+
+   let x=5;
+   let y=x;
+   y=10;
+ //  alert(x)
+
+ //Object creation in JS
+
+function Car(color,year){
+this.carColor=color;
+this.carYear=year;   
+//this.carOrigin ='USA'
+}
+
+const audiCar = new Car('Red',2022);
+const benzCar = new Car('White',2010)
+
+
+Car.prototype.getCarDetails = function(){
+    return `Car color is ${this.carColor} and year is ${this.carYear}`
+}
+
+console.log(audiCar)
+console.log(benzCar)
+
+console.log(audiCar.getCarDetails())
+
+console.log(benzCar.getCarDetails())
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
